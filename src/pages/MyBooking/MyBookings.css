@@ -1,0 +1,155 @@
+.mybookings-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .mybookings-container h2 {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .no-bookings {
+    text-align: center;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    color: #666;
+  }
+  
+  .bookings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .booking-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .booking-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .booking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .booking-id {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .status.confirmed {
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  .status.cancelled {
+    background: #f8d7da;
+    color: #721c24;
+  }
+  
+  .booking-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .route-info, .ticket-info {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .route-info h3, .ticket-info h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  .route-info p, .ticket-info p {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .arrow {
+    margin: 0 10px;
+    color: #666;
+  }
+  
+  .booking-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+  
+  .cancel-button, .download-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    flex: 1;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .download-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c82333;
+  }
+  
+  .download-button:hover {
+    background-color: #218838;
+  }
+  
+  @media (max-width: 768px) {
+    .booking-details {
+      grid-template-columns: 1fr;
+    }
+  
+    .booking-actions {
+      flex-direction: column;
+    }
+  
+    .cancel-button, .download-button {
+      width: 100%;
+    }
+  }
+  
